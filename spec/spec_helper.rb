@@ -1,4 +1,5 @@
 require 'support/request_helper'
+require 'factory_girl_rails'
 
 RSpec.configure do |config|
 
@@ -11,4 +12,5 @@ RSpec.configure do |config|
   end
   config.shared_context_metadata_behavior = :apply_to_host_groups
   config.include Requests::JsonHelpers, type: :request
+  config.include FactoryGirl::Syntax::Methods
 end

@@ -19,3 +19,5 @@ end
 ```
 5. Agregar `require 'support/request_helper'` al principio de spec_helper
 6. Agregar `config.include Requests::JsonHelpers, type: :request` dentro de las configuraciones del bloque de `RSpec.configure` para poder user el metodo `json` dentro de nuestros tests
+7. Agregar `require 'factory_girl_rails'` al principio de spec_helper
+8. Agregar `config.include FactoryGirl::Syntax::Methods` dentro de las configuraciones del bloque de `RSpec.configure` para poder usar `create` y `build` dentro de nuestros tests sin necesidad de incluir FactoryGirl en cada uno de nuestros test
