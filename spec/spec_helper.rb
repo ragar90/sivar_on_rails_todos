@@ -13,4 +13,5 @@ RSpec.configure do |config|
   config.shared_context_metadata_behavior = :apply_to_host_groups
   config.include Requests::JsonHelpers, type: :request
   config.include FactoryGirl::Syntax::Methods
+  config.formatter = :documentation
 end
