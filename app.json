@@ -3,7 +3,7 @@
     "test": {
       "scripts": {
         "test-setup": "rake db:migrate",
-        "test": "rubocop ."
+        "test": "rspec spec/*"
       }
     }
   }
